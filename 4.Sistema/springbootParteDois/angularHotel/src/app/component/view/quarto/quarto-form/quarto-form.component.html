@@ -1,0 +1,23 @@
+<mat-card>
+    <mat-card-title>{{titulo}}</mat-card-title>
+    <form>
+        <mat-form-field>
+            <input matInput placeholder="hotel" name="hotel" [(ngModel)]="quarto.hotel">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="categoriaQuarto" name="categoriaQuarto" [(ngModel)]="quarto.categoriaQuarto">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput type="number" placeholder="qtdLeito" name="qtdLeito" [(ngModel)]="quarto.qtdLeito">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput type="number" placeholder="nrQuarto" name="nrQuarto" [(ngModel)]="quarto.nrQuarto">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput type="number" placeholder="prDiaria" name="prDiaria" [(ngModel)]="quarto.prDiaria">
+        </mat-form-field>
+    </form>
+
+    <button mat-raised-button color="primary" (click)="salvar()">Salvar</button>
+    <button mat-raised-button color="warn" routerLink="/quartos/">Cancelar</button>
+</mat-card>

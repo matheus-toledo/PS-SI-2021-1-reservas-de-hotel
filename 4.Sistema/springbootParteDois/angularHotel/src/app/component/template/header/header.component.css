@@ -1,0 +1,20 @@
+.example-spacer {
+    flex: 1 1 auto;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+}
+
+.header a {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        color: #fff;
+}
+
+.flag-icon-bra {
+  background-image: url(../flags/4x3/bra.svg); }
+.flag-icon-bra.flag-icon-squared {
+  background-image: url(../flags/1x1/bra.svg); }
